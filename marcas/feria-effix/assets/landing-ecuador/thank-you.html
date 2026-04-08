@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es-EC" class="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Ya eres parte del Círculo Effix Ecuador</title>
+<meta name="description" content="Tu Kit Círculo Effix Ecuador está en camino. Revisa tu WhatsApp ahora."/>
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
+
+<!-- Preconnect fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
+
+<!-- GTM — Consent Mode v2 default denied -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
+  (function() {
+    var saved = localStorage.getItem('effix_ec_consent');
+    if (saved === 'granted') {
+      gtag('consent', 'update', {
+        analytics_storage: 'granted',
+        ad_storage: 'granted',
+        ad_user_data: 'granted',
+        ad_personalization: 'granted'
+      });
+    }
+  })();
+</script>
+
+<!-- GTM snippet -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TLRMK246');</script>
+
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CRXZ50VX7D"></script>
+<script>
+  gtag('config', 'G-CRXZ50VX7D', { send_page_view: true, page: 'landing_ecuador_thankyou_v2' });
+</script>
+
+<!-- Meta Pixel placeholder — TODO: reemplazar PIXEL_ID con ID real antes de lanzar -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'PIXEL_ID'); /* TODO: reemplazar PIXEL_ID */
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="0" style="display:none"
+src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1" alt=""/></noscript>
+<!-- /Meta Pixel -->
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+<script>
+tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        gold: '#C9A84C',
+        'gold-hover': '#D4B85C',
+        red: '#C0392B',
+        cream: '#F0EDE8',
+        silver: '#B8B8B8',
+        surface: '#1A1A1A',
+        'surface-dim': '#0A0A0A',
+        border: '#2A2A2A',
+        whatsapp: '#25D366',
+      },
+      fontFamily: {
+        display: ['Bebas Neue', 'sans-serif'],
+        body: ['DM Sans', 'sans-serif'],
+        editorial: ['DM Serif Display', 'serif'],
+      },
+    },
+  },
+}
+</script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #000; color: #F0EDE8; font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+
+  /* Gold glow */
+  .gold-glow-sm { box-shadow: 0 0 20px rgba(201,168,76,0.12); }
+
+  /* WhatsApp pulse */
+  @keyframes pulse-ring {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(2.4); opacity: 0; }
+  }
+  .pulse-ring { position: relative; }
+  .pulse-ring::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    background: #25D366;
+    animation: pulse-ring 1.8s ease-out infinite;
+  }
+
+  /* Celebration animation */
+  @keyframes float-up {
+    0% { opacity: 0; transform: translateY(30px) scale(0.95); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .animate-in { animation: float-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+  .delay-100 { animation-delay: 0.1s; opacity: 0; }
+  .delay-200 { animation-delay: 0.2s; opacity: 0; }
+  .delay-300 { animation-delay: 0.3s; opacity: 0; }
+  .delay-400 { animation-delay: 0.4s; opacity: 0; }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    .animate-in, .delay-100, .delay-200, .delay-300, .delay-400 { opacity: 1 !important; transform: none !important; }
+  }
+
+  /* Primary buttons */
+  .btn-gold {
+    background: #C9A84C; color: #000; font-family: 'DM Sans', sans-serif;
+    font-weight: 700; border-radius: 8px;
+    transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn-gold:hover { background: #D4B85C; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,168,76,0.35); }
+  .btn-gold:active { transform: translateY(0); }
+  .btn-gold:focus-visible { outline: 2px solid #C9A84C; outline-offset: 2px; }
+
+  .btn-whatsapp {
+    background: #25D366; color: #fff; font-family: 'DM Sans', sans-serif;
+    font-weight: 700; border-radius: 8px;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+  .btn-whatsapp:hover { background: #20bd5a; transform: translateY(-2px); }
+  .btn-whatsapp:active { transform: translateY(0); }
+  .btn-whatsapp:focus-visible { outline: 2px solid #25D366; outline-offset: 2px; }
+
+  /* Step number */
+  .step-num {
+    min-width: 32px; height: 32px; border-radius: 50%;
+    background: #C9A84C; color: #000; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+  }
+
+  /* Alerta benigna */
+  .alerta-benigna {
+    background: rgba(201,168,76,0.06);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 12px; padding: 16px;
+  }
+</style>
+</head>
+<body>
+
+<!-- GTM noscript -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLRMK246" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+
+<!-- ============================================================
+  MINIMAL NAV
+============================================================= -->
+<nav class="border-b border-border/50 py-4 px-4 md:px-6" aria-label="Navegación">
+  <div class="max-w-4xl mx-auto flex items-center justify-between">
+    <a href="index.html" class="font-display text-gold text-lg uppercase tracking-tight hover:text-gold-hover transition-colors" aria-label="Volver a la landing del Círculo Effix">
+      FERIA EFFIX
+    </a>
+    <span class="text-silver text-xs border border-border rounded-full px-3 py-1">El Círculo · Ecuador</span>
+  </div>
+</nav>
+
+<!-- ============================================================
+  MAIN — Confirmación
+============================================================= -->
+<main class="max-w-3xl mx-auto px-4 md:px-6 py-16 md:py-24">
+
+  <!-- Ícono celebración + Headline -->
+  <div class="text-center mb-10 animate-in">
+    <div class="w-20 h-20 bg-gold/10 border border-gold/30 rounded-full flex items-center justify-center mx-auto gold-glow-sm mb-6" aria-hidden="true">
+      <svg class="w-10 h-10 text-gold" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+
+    <!-- Headline dinámico — nombre desde URL query -->
+    <h1 class="font-display text-cream uppercase text-[clamp(2.5rem,7vw,4.5rem)] leading-[0.95] mb-4">
+      Ya eres parte del<br/>
+      <span class="text-gold">Círculo Effix Ecuador</span><span id="name-comma" style="display:none">,</span><br/>
+      <span id="greeting-name" class="text-cream" style="display:none"></span>
+    </h1>
+    <p class="text-silver text-base md:text-lg leading-relaxed max-w-lg mx-auto">
+      Tu Kit está en camino. Revisa tu WhatsApp ahora — te llegó el acceso completo.
+    </p>
+  </div>
+
+  <!-- ============================================================
+    INSTRUCCIONES WHATSAPP — número de contacto
+  ============================================================= -->
+  <div class="bg-surface border border-border rounded-2xl p-6 mb-6 animate-in delay-100" aria-label="Instrucciones para recibir el Kit">
+    <div class="flex items-center gap-3 mb-4">
+      <svg class="w-6 h-6 text-whatsapp flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      <h2 class="font-body font-700 text-cream text-lg">¿No ves el mensaje en WhatsApp?</h2>
+    </div>
+    <p class="text-silver text-sm leading-relaxed mb-3">
+      Guarda este número en tus contactos y el mensaje de bienvenida con el Kit aparecerá de inmediato:
+    </p>
+    <div class="bg-black rounded-xl p-4 border border-border inline-flex items-center gap-3">
+      <svg class="w-5 h-5 text-whatsapp flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <!-- TODO: reemplazar con número real del WhatsApp Business del Círculo antes de publicar -->
+      <span class="text-cream font-semibold text-sm">+593 000 000 000 — El Círculo Effix</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+    3 PASOS NUMERADOS
+  ============================================================= -->
+  <div class="mb-8 animate-in delay-200">
+    <h2 class="font-body font-700 text-cream text-xl mb-6">Tus próximos 3 pasos</h2>
+
+    <ol class="space-y-3" role="list">
+      <li class="flex items-start gap-4 bg-surface border border-border rounded-xl p-5">
+        <span class="step-num" aria-hidden="true">1</span>
+        <div>
+          <p class="text-cream font-semibold text-sm mb-1">Guarda el número del Círculo Effix en tus contactos</p>
+          <p class="text-silver text-sm leading-relaxed">WhatsApp reconoce el número y el mensaje de bienvenida con tu Kit aparece correctamente. El número está arriba.</p>
+        </div>
+      </li>
+      <li class="flex items-start gap-4 bg-surface border border-border rounded-xl p-5">
+        <span class="step-num" aria-hidden="true">2</span>
+        <div>
+          <p class="text-cream font-semibold text-sm mb-1">Abre WhatsApp y revisa el mensaje de bienvenida</p>
+          <p class="text-silver text-sm leading-relaxed">Ahí están los enlaces del Playbook y el Directorio, más el acceso al subgrupo de tu ciudad (Quito, Guayaquil o Cuenca).</p>
+        </div>
+      </li>
+      <li class="flex items-start gap-4 bg-surface border border-border rounded-xl p-5">
+        <span class="step-num" aria-hidden="true">3</span>
+        <div>
+          <p class="text-cream font-semibold text-sm mb-1">Descarga el Kit y únete al próximo Miércoles del Círculo</p>
+          <p class="text-silver text-sm leading-relaxed">El próximo miércoles es el <strong class="text-cream">22 de abril a las 7:00 PM Ecuador</strong>. El link de Zoom llega por WhatsApp ese mismo día.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <!-- ============================================================
+    CTA WHATSAPP MASIVO
+  ============================================================= -->
+  <div class="text-center mb-8 animate-in delay-200">
+    <!-- TODO: reemplazar 593000000000 con número real del bot WhatsApp Business -->
+    <a
+      href="https://wa.me/593000000000?text=Hola%2C+quiero+mi+Kit+C%C3%ADrculo+Effix+Ecuador"
+      target="_blank"
+      rel="noopener"
+      class="btn-whatsapp inline-flex items-center gap-3 px-8 py-4 text-base uppercase tracking-widest"
+      onclick="trackWA()"
+      aria-label="Abrir WhatsApp para recibir el Kit del Círculo Effix"
+    >
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Abrir WhatsApp ahora
+    </a>
+  </div>
+
+  <!-- ============================================================
+    CARD PRÓXIMO MIÉRCOLES DEL CÍRCULO — NUEVO v2
+  ============================================================= -->
+  <div class="bg-surface border border-gold/40 rounded-2xl p-6 mb-6 gold-glow-sm animate-in delay-300" aria-label="Tu próximo Miércoles del Círculo">
+    <div class="flex items-center gap-2 mb-5">
+      <span class="w-2 h-2 rounded-full bg-gold animate-pulse" aria-hidden="true"></span>
+      <p class="text-gold text-xs font-semibold uppercase tracking-widest">Tu próximo Miércoles del Círculo</p>
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+      <div class="space-y-2">
+        <h3 class="font-body font-700 text-cream text-lg">Miércoles 22 de abril, 2026</h3>
+        <p class="text-silver text-sm">7:00 PM hora Ecuador (UTC-5)</p>
+        <div class="flex items-center gap-3 mt-2">
+          <div class="w-9 h-9 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0" aria-hidden="true">
+            <span class="font-display text-gold text-sm">SM</span>
+          </div>
+          <div>
+            <p class="text-cream text-sm font-semibold">Sara Montoya</p>
+            <p class="text-silver text-xs">"Cómo construir marca propia desde cero con ecommerce"</p>
+          </div>
+        </div>
+        <p class="text-silver/60 text-xs pt-1">Si no puedes en vivo, la grabación queda en la comunidad.</p>
+      </div>
+
+      <!-- Botón agregar al calendario — ICS stub -->
+      <button
+        class="flex-shrink-0 flex items-center gap-2 border border-gold/30 rounded-xl px-4 py-3 text-gold text-sm hover:bg-gold/10 transition-colors"
+        onclick="addToCalendar()"
+        aria-label="Descargar evento del Miércoles del Círculo para agregar al calendario"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        Agregar al calendario
+      </button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+    CARD "MIENTRAS ESPERAS"
+  ============================================================= -->
+  <div class="bg-surface-dim border border-border rounded-2xl p-6 mb-8 animate-in delay-300">
+    <h3 class="font-body font-700 text-cream text-base mb-5">Mientras esperas el Kit — explora el ecosistema</h3>
+    <div class="space-y-3">
+      <a
+        href="https://feriaeffix.com"
+        target="_blank"
+        rel="noopener"
+        class="flex items-center justify-between gap-4 bg-black rounded-xl px-4 py-3.5 border border-border hover:border-gold/30 transition-colors group"
+        aria-label="Visitar el sitio oficial de Feria Effix"
+      >
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 bg-gold/10 rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
+            <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+          </div>
+          <div>
+            <p class="text-cream text-sm font-semibold">Feria Effix 2026</p>
+            <p class="text-silver text-xs">feriaeffix.com — el evento completo</p>
+          </div>
+        </div>
+        <svg class="w-4 h-4 text-silver group-hover:text-gold transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+      </a>
+
+      <a
+        href="https://instagram.com/feriaeffix"
+        target="_blank"
+        rel="noopener"
+        class="flex items-center justify-between gap-4 bg-black rounded-xl px-4 py-3.5 border border-border hover:border-gold/30 transition-colors group"
+        aria-label="Seguir a Feria Effix en Instagram"
+      >
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 bg-gold/10 rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
+            <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </div>
+          <div>
+            <p class="text-cream text-sm font-semibold">@feriaeffix en Instagram</p>
+            <p class="text-silver text-xs">Contenido, speakers y actualizaciones del evento</p>
+          </div>
+        </div>
+        <svg class="w-4 h-4 text-silver group-hover:text-gold transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+    ALERTA BENIGNA — ¿No llegó en 2 min?
+  ============================================================= -->
+  <div class="alerta-benigna animate-in delay-400" role="region" aria-label="Soporte si no recibiste el mensaje">
+    <div class="flex items-start gap-3">
+      <svg class="w-5 h-5 text-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <div>
+        <p class="text-cream text-sm font-semibold mb-1">¿No te llegó el mensaje en 2 minutos?</p>
+        <p class="text-silver text-sm leading-relaxed">
+          Primero guarda el número del Círculo en tus contactos — eso suele resolver el problema. Si después de 5 minutos no ves nada, escríbenos a
+          <a href="mailto:info@feriaeffix.com" class="text-gold underline hover:opacity-80 transition-opacity">info@feriaeffix.com</a>
+          con tu nombre y número de WhatsApp. Lo resolvemos en minutos.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ============================================================
+  FOOTER MÍNIMO
+============================================================= -->
+<footer class="border-t border-border/50 py-8 px-4 text-center mt-8">
+  <div class="max-w-3xl mx-auto space-y-3">
+    <p class="text-silver/50 text-xs leading-relaxed">
+      Al registrarte, aceptaste recibir comunicaciones de El Círculo Effix, Feria Effix y Grupo Effi conforme a la
+      <a href="https://feriaeffix.com/privacidad#lopdp" target="_blank" rel="noopener" class="text-gold/60 hover:text-gold transition-colors">LOPDP Ecuador</a> y la
+      <a href="https://feriaeffix.com/privacidad#ley1581" target="_blank" rel="noopener" class="text-gold/60 hover:text-gold transition-colors">Ley Estatutaria 1581 de 2012 de Colombia</a>.
+      Derechos: <a href="mailto:privacidad@feriaeffix.com" class="text-gold/60 hover:text-gold transition-colors">privacidad@feriaeffix.com</a>.
+    </p>
+    <p class="text-silver/30 text-xs">© 2026 Grupo Effi — Todos los derechos reservados</p>
+  </div>
+</footer>
+
+<!-- ============================================================
+  SCRIPTS
+============================================================= -->
+<script>
+'use strict';
+
+// ---- Parsear nombre desde query string y mostrarlo ----
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  var nombre = params.get('name') || '';
+  var eventId = params.get('event_id') || '';
+
+  if (nombre && nombre.trim().length > 0) {
+    var greetEl = document.getElementById('greeting-name');
+    var commaEl = document.getElementById('name-comma');
+    if (greetEl && commaEl) {
+      var firstName = nombre.trim().split(' ')[0];
+      greetEl.textContent = firstName;
+      greetEl.style.display = 'inline';
+      commaEl.style.display = 'inline';
+    }
+  }
+
+  // Evento GA4 lead_confirmed
+  dataLayer.push({
+    event: 'lead_confirmed',
+    lead_type: 'circulo-ecuador',
+    page: 'thank-you-v2',
+    event_id: eventId || ''
+  });
+
+  // Meta Pixel Lead + PageView en thank-you
+  if (typeof fbq === 'function') {
+    fbq('track', 'Lead',
+      { content_name: 'circulo-ecuador-v2-confirmed' },
+      eventId ? { eventID: eventId } : {}
+    );
+  }
+})();
+
+// ---- Agregar al calendario — ICS download stub ----
+function addToCalendar() {
+  var icsContent = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Feria Effix//Circulo Ecuador//ES',
+    'BEGIN:VEVENT',
+    'DTSTART:20260422T220000Z',
+    'DTEND:20260422T230000Z',
+    'SUMMARY:Miércoles del Círculo Effix — Sara Montoya',
+    'DESCRIPTION:Sesión grupal en vivo: "Cómo construir marca propia desde cero con ecommerce". El link de acceso llega por WhatsApp antes de la sesión.',
+    'LOCATION:WhatsApp / Zoom (link por confirmar — llega por WA)',
+    'STATUS:CONFIRMED',
+    'ORGANIZER;CN=El Círculo Effix:mailto:info@feriaeffix.com',
+    'END:VEVENT',
+    'END:VCALENDAR'
+  ].join('\r\n');
+
+  var blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url;
+  a.download = 'miercoles-circulo-effix-22abr2026.ics';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+
+  dataLayer.push({ event: 'calendar_add', session: 'miercoles-22-abr-2026' });
+}
+
+// ---- WhatsApp click tracking ----
+function trackWA() {
+  dataLayer.push({ event: 'whatsapp_click', source: 'thank-you-primary-cta' });
+}
+</script>
+
+</body>
+</html>
