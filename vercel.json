@@ -1,13 +1,11 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cd marcas/feria-effix/assets/landing-ecuador && npm install && npm run build",
+  "buildCommand": "cd marcas/feria-effix/assets/landing-ecuador && npm install && npm run build && cp dist/index-v3.html dist/index.html",
   "outputDirectory": "marcas/feria-effix/assets/landing-ecuador/dist",
   "installCommand": "echo skip-root-install",
   "framework": null,
-  "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/", "destination": "/index-v3.html" },
     { "source": "/gracias", "destination": "/thank-you.html" }
   ],
   "headers": [
