@@ -31,3 +31,11 @@ marcas/feria-effix/context/branding/*.html
 
 # Auditoría PDFs (pesados)
 Auditoria_Landing_Effix_2026*.pdf
+
+# Variables de entorno — NUNCA commitear
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+**/.env.*.local
