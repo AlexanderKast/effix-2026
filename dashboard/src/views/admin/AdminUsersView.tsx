@@ -102,22 +102,27 @@ export function AdminUsersView() {
                   )}
                 </td>
                 <td className="px-4 py-3 text-xs">
-                  {u.marca_scope.length > 0 || u.pais_scope.length > 0 ? (
-                    <div className="space-y-0.5">
-                      {u.marca_scope.length > 0 && (
-                        <div>
-                          <span className="text-slate-400">marcas:</span> {u.marca_scope.join(', ')}
-                        </div>
-                      )}
-                      {u.pais_scope.length > 0 && (
-                        <div>
-                          <span className="text-slate-400">países:</span> {u.pais_scope.join(', ')}
-                        </div>
-                      )}
-                    </div>
-                  ) : (
-                    <span className="text-slate-400">Todo</span>
-                  )}
+                  {(() => {
+                    const marcas = u.marca_scope ?? []
+                    const paises = u.pais_scope ?? []
+                    if (marcas.length === 0 && paises.length === 0) {
+                      return <span className="text-slate-400">Todo</span>
+                    }
+                    return (
+                      <div className="space-y-0.5">
+                        {marcas.length > 0 && (
+                          <div>
+                            <span className="text-slate-400">marcas:</span> {marcas.join(', ')}
+                          </div>
+                        )}
+                        {paises.length > 0 && (
+                          <div>
+                            <span className="text-slate-400">países:</span> {paises.join(', ')}
+                          </div>
+                        )}
+                      </div>
+                    )
+                  })()}
                 </td>
                 <td className="px-4 py-3 text-xs text-slate-500">
                   {u.last_sign_in
