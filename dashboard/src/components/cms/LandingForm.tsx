@@ -99,7 +99,7 @@ export function LandingForm({ landing, strategyId, onSaved, onClose }: Props) {
               value={form.url_vercel}
               onChange={(e) => setForm({ ...form, url_vercel: e.target.value })}
               className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-              placeholder="https://landing-ecuador.vercel.app"
+              placeholder="https://mi-landing.vercel.app"
             />
           </Field>
           <Field label="URL producción">
