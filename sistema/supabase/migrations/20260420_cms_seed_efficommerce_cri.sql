@@ -105,25 +105,28 @@ Split: 70% Funnel A (tradicionales) / 30% Funnel B (migración Shopify)',
     ) values (
       v_strategy_id,
       'efficommerce-cr',
-      'https://landing-ecuador.vercel.app',  -- referencia visual (clon)
+      null,                                    -- CR aún no tiene mockup
       null,
       'dual A+B',
       'lead_capture',
       'mockup',
-      '## Landing EffiCommerce Costa Rica
+      '## Landing EffiCommerce Costa Rica — pendiente mockup
 
-- Base: clon de `landing-ecuador.vercel.app`
-- Adaptación copy + brand propio EffiCommerce
-- Dual funnel con selector de perfil en hero:
-  - A: negocios tradicionales (pulperías, sodas, talleres, profesionales)
-  - B: dueños Shopify/Jumpseller/Tiendanube
-- URL final: `efficommerce.com/cr`
+Costa Rica aún **no tiene mockup** de landing. Este registro sirve como contenedor inicial para planear el desarrollo.
 
-### Pendiente
-- [ ] Dev: clonar repo landing-ecuador
-- [ ] Design: aplicar paleta Effi Navy + Mint (no Feria Effix)
-- [ ] Copy: adaptar de `copy-deck-cr.md` (16 secciones listas)
-- [ ] Deploy Vercel + custom domain',
+## Dual funnel planificado
+- A: negocios tradicionales (pulperías, sodas, talleres, profesionales) · 70% budget
+- B: dueños Shopify/Jumpseller/Tiendanube · 30% budget
+
+## URL final esperada
+`efficommerce.com/cr` (subdirectorio)
+
+## Pendiente
+- [ ] Diseño: mockup visual con paleta EffiCommerce propia (Effi Navy + Mint)
+- [ ] Dev: setup repo/proyecto Vercel (referencia técnica: landing-ecuador)
+- [ ] Copy: aplicar `marcas/efficommerce/costa-rica/assets/landing-cr/copy-deck-cr.md` (16 secciones listas)
+- [ ] QA tracking (GTM + GA4 + Meta Pixel + CAPI)
+- [ ] Deploy con custom domain',
       v_owner_id
     )
     returning id into v_landing_id;
