@@ -92,16 +92,16 @@ export function BrandBudgetTab({ brand }: { brand: CmsBrand }) {
                   <td className="px-4 py-3 font-medium text-[#0E2A47]">
                     {PLATFORM_LABEL[b.platform as AdPlatform] ?? b.platform}
                   </td>
-                  <td className="px-4 py-3 text-xs text-slate-500">
+                  <td className="px-4 py-3 text-xs text-slate-600">
                     {formatDate(b.period_start)} → {formatDate(b.period_end)}
                   </td>
-                  <td className="px-4 py-3 text-right tabular-nums font-medium">
+                  <td className="px-4 py-3 text-right tabular-nums font-semibold text-[#0E2A47]">
                     {formatUsd(b.amount_usd)}
                   </td>
-                  <td className="px-4 py-3 text-right tabular-nums text-slate-600">
+                  <td className="px-4 py-3 text-right tabular-nums text-[#1A1A1A]">
                     {b.amount_local ? b.amount_local.toLocaleString('es-CR') : '—'}
                   </td>
-                  <td className="px-4 py-3 text-xs">{b.currency}</td>
+                  <td className="px-4 py-3 text-xs text-slate-700 font-medium">{b.currency}</td>
                   <td className="px-4 py-3 text-right">
                     {isAdmin && (
                       <div className="flex items-center justify-end gap-2">

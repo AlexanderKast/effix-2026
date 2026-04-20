@@ -15,7 +15,7 @@ export function NoAccessView() {
       : 'Tu cuenta admin fue desactivada. Contactá a un super admin.'
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#FAF7F0] p-6">
+    <div className="min-h-screen flex items-center justify-center bg-[#FAF7F0] text-[#1A1A1A] p-6">
       <div className="w-full max-w-md text-center">
         <div className="bg-white rounded-xl border border-slate-200 p-8 shadow-sm">
           <h1 className="font-semibold text-2xl text-[#0E2A47] mb-3">

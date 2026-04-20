@@ -85,7 +85,7 @@ export function AdminLayout({ nav, onNavigate, children }: AdminLayoutProps) {
   }
 
   return (
-    <div className="min-h-screen flex bg-[#FAF7F0]">
+    <div className="min-h-screen flex bg-[#FAF7F0] text-[#1A1A1A]">
       {/* Sidebar */}
       <aside className="w-64 bg-[#0E2A47] text-white flex flex-col">
         <div className="p-4 border-b border-white/10">

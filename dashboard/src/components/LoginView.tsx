@@ -42,7 +42,7 @@ export function LoginView() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#FAF7F0] p-6">
+    <div className="min-h-screen flex items-center justify-center bg-[#FAF7F0] text-[#1A1A1A] p-6">
       <div className="w-full max-w-md">
         <div className="mb-8 text-center">
           <h1 className="font-semibold text-3xl tracking-tight text-[#0E2A47]">

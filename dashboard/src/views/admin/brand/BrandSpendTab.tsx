@@ -183,20 +183,22 @@ export function BrandSpendTab({ brand }: { brand: CmsBrand }) {
                 )}
                 {entries.slice(0, 200).map((e) => (
                   <tr key={e.id} className="hover:bg-slate-50">
-                    <td className="px-4 py-2.5 text-xs whitespace-nowrap">{formatDate(e.fecha)}</td>
-                    <td className="px-4 py-2.5 text-xs">
+                    <td className="px-4 py-2.5 text-xs whitespace-nowrap text-slate-700">
+                      {formatDate(e.fecha)}
+                    </td>
+                    <td className="px-4 py-2.5 text-xs text-[#1A1A1A]">
                       {PLATFORM_LABEL[e.platform as AdPlatform] ?? e.platform}
                     </td>
-                    <td className="px-4 py-2.5 text-right tabular-nums text-slate-700">
+                    <td className="px-4 py-2.5 text-right tabular-nums text-[#1A1A1A]">
                       {formatLocalAmount(e.amount_local, e.currency)}
                     </td>
-                    <td className="px-4 py-2.5 text-right text-xs text-slate-500 tabular-nums">
+                    <td className="px-4 py-2.5 text-right text-xs text-slate-600 tabular-nums">
                       {e.fx_rate.toFixed(6)}
                     </td>
-                    <td className="px-4 py-2.5 text-right tabular-nums font-medium">
+                    <td className="px-4 py-2.5 text-right tabular-nums font-semibold text-[#0E2A47]">
                       {formatUsd(e.amount_usd)}
                     </td>
-                    <td className="px-4 py-2.5 text-xs text-slate-500">{e.source}</td>
+                    <td className="px-4 py-2.5 text-xs text-slate-600">{e.source}</td>
                     <td className="px-4 py-2.5">
                       {e.reconciled ? (
                         <span className="inline-block rounded-full bg-emerald-100 text-emerald-700 text-[10px] px-2 py-0.5">

@@ -290,11 +290,15 @@ function BrandPaceWidget({
                   <td className="px-3 py-2.5 text-right tabular-nums text-slate-700">
                     {data.budget > 0 ? formatUsd(data.budget) : '—'}
                   </td>
-                  <td className="px-3 py-2.5 text-right tabular-nums">{formatUsd(data.spend)}</td>
+                  <td className="px-3 py-2.5 text-right tabular-nums font-semibold text-[#0E2A47]">
+                    {formatUsd(data.spend)}
+                  </td>
                   <td className="px-3 py-2.5 text-right">
                     <span className="inline-flex items-center gap-1.5">
                       <span className={`w-2 h-2 rounded-full ${semaforo}`} />
-                      <span className="tabular-nums text-xs">{data.budget > 0 ? `${pct.toFixed(0)}%` : '—'}</span>
+                      <span className="tabular-nums text-xs text-slate-700">
+                        {data.budget > 0 ? `${pct.toFixed(0)}%` : '—'}
+                      </span>
                     </span>
                   </td>
                   <td className="px-5 py-2.5 text-right">
